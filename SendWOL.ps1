@@ -1,12 +1,12 @@
 <# 
   .SYNOPSIS  
-    Send a WOL packet to a broadcast address  Usage: SendWOL -mac [address]
+    Send a WOL packet to a broadcast address  Usage: SendWOL [MAC address]
 
-  .PARAMETER mac
-   The MAC address of the device that need to wake up
+  .PARAMETER
+   The MAC address of the device that need to wake up (will accept either : or - separators)
 
   .EXAMPLE
-  .\SendWOL -mac 74:D0:2B:7C:8E:B3
+  .\SendWOL 74:D0:2B:7C:8E:B3
 #>
 
 [CmdletBinding()]
